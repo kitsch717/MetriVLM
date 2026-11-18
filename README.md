@@ -30,22 +30,22 @@ The model aligns depth with RGB tokens, adapts depth features to local visual co
 
 The RGB and depth branches use independent measurement queries and attention weights. Their measurement contexts are combined by additive fusion.
 
-## Synthetic scene previews
+## Paired RGB and depth examples
 
-<img src="https://github.com/kitsch717/MetriVLM/blob/main/synthetic_examples.jpg?raw=true" alt="Three synthetic construction scenes: edge protection, a protective gate, and a worker climbing a ladder." width="100%">
+<img src="https://github.com/kitsch717/MetriVLM/blob/main/synthetic_examples.jpg?raw=true" alt="Paired synthetic RGB images and their corresponding depth visualizations from the manuscript; each row shows one sample." width="100%">
 
-Examples from the synthetic construction scenes. The dataset pairs RGB images with depth maps, physical measurements, and violation labels derived from safety rules.
+Paired RGB images and their corresponding depth visualizations from the manuscript. Each row shows one synthetic sample. The dataset pairs RGB images with depth maps, physical measurements, and violation labels derived from safety rules.
 
 ## Results
 
 Reported results from the manuscript:
 
-| Evaluation | MAE ↓ (cm) | RMSE ↓ (cm) | Violation F1 ↑ |
-|:--|--:|--:|--:|
-| Synthetic evaluation | **6.3797** | **10.0157** | **94.7813%** |
-| 500 real photographs | **18.00** | **19.72** | — |
+| Evaluation | MAE ↓ (cm) | RMSE ↓ (cm) |
+|:--|--:|--:|
+| Synthetic evaluation | **6.3797** | **10.0157** |
+| 500 real photographs | **18.00** | **19.72** |
 
-The real photographs were taken with handheld smartphones, with reference dimensions measured using a steel ruler. MetriVLM outperforms the RGB-only baseline across the reported evaluation settings. The dash indicates that this table does not report a real-image violation F1 score.
+The real photographs were taken with handheld smartphones, with reference dimensions measured using a steel ruler. MetriVLM outperforms the RGB-only baseline across the reported evaluation settings.
 
 ## Getting started
 
@@ -69,7 +69,5 @@ MetriVLM/
 ```
 
 ## Data availability
-
-**Data will be made available on request.**
 
 For dataset access and research enquiries, please contact **Luxuan Fu** at **[flxuan@whu.edu.cn](mailto:flxuan@whu.edu.cn)**.
