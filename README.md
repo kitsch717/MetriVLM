@@ -16,7 +16,7 @@ Luxuan Fu · Weizheng Wang · Chong Liu · Bisheng Yang · Jichao Yang
 
 Construction safety assessment often depends on physical dimensions that are difficult to infer from appearance alone. **MetriVLM combines RGB localization with predicted metric depth** to estimate dimensions and support assessment against numerical safety rules.
 
-<img src="architecture.png" alt="MetriVLM architecture: RGB and predicted depth, aligned depth-token injection, three prediction heads, and a textual safety response." width="100%">
+<img src="https://github.com/kitsch717/MetriVLM/blob/main/architecture.png?raw=true" alt="MetriVLM architecture: RGB and predicted depth, aligned depth-token injection, three prediction heads, and a textual safety response." width="100%">
 
 The model aligns depth with RGB tokens, adapts depth features to local visual context, and aggregates measurement evidence through an RGB-guided bottleneck. It predicts scenes, physical measurements, and violation categories; compliance is derived from predicted measurements and safety thresholds.
 
@@ -32,7 +32,7 @@ The RGB and depth branches use independent measurement queries and attention wei
 
 ## Synthetic scene previews
 
-<img src="synthetic_examples.jpg" alt="Three synthetic construction scenes: edge protection, a protective gate, and a worker climbing a ladder." width="100%">
+<img src="https://github.com/kitsch717/MetriVLM/blob/main/synthetic_examples.jpg?raw=true" alt="Three synthetic construction scenes: edge protection, a protective gate, and a worker climbing a ladder." width="100%">
 
 Examples from the synthetic construction scenes. The dataset pairs RGB images with depth maps, physical measurements, and violation labels derived from safety rules.
 
